@@ -158,7 +158,7 @@ class ACRepairCart extends Component {
                             <h5 style={{textAlign:"right", color:"white"}}><i className="fa fa-chevron-up"></i></h5>                             
                         </Col>
                     </Row>
-                    <CartModal/>
+                    {/* <CartModal/> */}
                     </Button>
                 </div>
 
