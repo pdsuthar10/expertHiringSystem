@@ -5,7 +5,7 @@ import { Row, Col, Badge } from "reactstrap";
 import "../../../../assets/vendor/font-awesome/css/font-awesome.min.css";
 import { connect } from 'react-redux';
 import { toggleCartModal } from '../../../../actions/toggleCartModal';
-// import CartModal from '../../Cleaning/SofaCleaning/CartModal';
+import CartModal from '../../Cleaning/SofaCleaning/CartModal';
 import { addProductFromDB } from '../../../../actions/addInputs/addProductFromDB';
 import Axios from 'axios';
 import ProductCard from './ProductCard';
@@ -158,7 +158,7 @@ class ACRepairCart extends Component {
                             <h5 style={{textAlign:"right", color:"white"}}><i className="fa fa-chevron-up"></i></h5>                             
                         </Col>
                     </Row>
-                    {/* <CartModal/> */}
+                    <CartModal/>
                     </Button>
                 </div>
 
