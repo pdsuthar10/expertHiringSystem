@@ -10,17 +10,6 @@ const app = express();
 
 mongoose.Promise = global.Promise;
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin",
-      "http://expert-hiring-system.herokuapp.com/");
-  res.header("Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept");
-  res.header("Access-Control-Allow-Methods",
-      "GET, POST, PUT, DELETE, OPTIONS");
-  res.header("Access-Control-Allow-Credentials", "true");
-  next();
-});
-
 var connectionString = '';
 if(process.env.USERNAME){
   connectionString = 'mongodb://'+process.env.USERNAME +':'+process.env.PASSWORD+'ds043057.mlab.com:43057/heroku_1mj6bx35'

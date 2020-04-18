@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Col, Button, Form, FormGroup, Label, Input, FormText, Row, Table } from 'reactstrap';
 import { connect } from 'react-redux';
 import Axios from 'axios';
+import {REQUEST_API_HEROKU} from '../api'
 
 
 
@@ -17,7 +18,7 @@ class PaymentHistory extends Component{
     }
     
     componentDidMount(){
-        Axios.get('http://localhost:5000/users/findByEmail/'+this.props.userState.user.username)
+        Axios.get(REQUEST_API_HEROKU+'users/findByEmail/'+this.props.userState.user.username)
             .then(
                 res=>{              
                     let paymentDetails=[]

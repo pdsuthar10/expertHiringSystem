@@ -9,6 +9,7 @@ import Axios from 'axios'
 import { connect } from 'react-redux'
 import { setSearch } from '../../../../actions/setSearch';
 import { Button } from 'react-bootstrap';
+import { REQUEST_API_HEROKU } from '../../../../api.js'
 
 class SofaCleaning extends Component{
 
@@ -19,8 +20,10 @@ class SofaCleaning extends Component{
         seeMoreReviews: false
     }
 
+
+
     componentDidMount(){
-        Axios.post('http://expert-hiring-node.herokuapp.com/professionals/category',
+        Axios.post(REQUEST_API_HEROKU+'professionals/category',
         {
             category: "Sofa Cleaning",
             city: this.props.mainPageState.city

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import axios, { post } from 'axios';
 import '../Careers.css';
+import {REQUEST_API_HEROKU} from '../api'
 
 
 import {
@@ -59,7 +60,7 @@ export default class Careers extends Component {
         e.preventDefault(); 
         this.resetForm();
 
-        axios.post('http://localhost:5000/application/add/',
+        axios.post(REQUEST_API_HEROKU+'application/add/',
         {
             name: this.state.name,
             email: this.state.email,

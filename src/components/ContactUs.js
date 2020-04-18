@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../index.css'
 import '../Careers.css';
 import  Axios  from "axios";
+import {REQUEST_API_HEROKU} from '../api'
 
 
 import {
@@ -97,7 +98,7 @@ export default class ContactUs extends Component {
             disabled: true
         });
 
-            Axios.post('http://localhost:5000/users/sendQuery', 
+            Axios.post(REQUEST_API_HEROKU+'users/sendQuery', 
             this.state,
             {
                 "headers": {

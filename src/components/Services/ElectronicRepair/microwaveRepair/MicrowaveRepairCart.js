@@ -11,6 +11,7 @@ import Axios from 'axios';
 import ProductCard from './ProductCard';
 import LoadingCard from './LoadingCard';
 import { Link } from "react-router-dom";
+import { REQUEST_API_HEROKU } from '../../../../api';
 
 
   
@@ -26,7 +27,7 @@ class MicrowaveRepairCart extends Component {
     }
 
     componentDidMount(){
-        Axios.get('http://localhost:5000/MicrowaveRepair/microwave')
+        Axios.get(REQUEST_API_HEROKU+'MicrowaveRepair/microwave')
             .then(res=>{
                 console.log(res.data);
                 let tempList = []

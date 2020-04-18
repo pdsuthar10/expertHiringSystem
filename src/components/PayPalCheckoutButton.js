@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { setPayment } from '../actions/setPayment';
 import { emptyCart } from '../actions/emptyCart';
 import Axios from 'axios';
+import { REQUEST_API_HEROKU } from '../api';
 
 
 class PayPalCheckoutButton extends React.Component {
@@ -66,7 +67,7 @@ class PayPalCheckoutButton extends React.Component {
               .then(response => {
                 console.log(response);
                 this.props.emptyCart();
-                Axios.post('http://localhost:5000/users/addPayment',
+                Axios.post(REQUEST_API_HEROKU+'users/addPayment',
                 {
                     username: this.props.userState.user.username,
                     payment: response

@@ -11,6 +11,7 @@ import Axios from 'axios';
 import ProductCard from './ProductCard';
 import LoadingCard from './LoadingCard';
 import { Link } from "react-router-dom";
+import { REQUEST_API_HEROKU } from '../../../../api';
 
 
   
@@ -26,7 +27,7 @@ class WaterRepairCart extends Component {
     }
 
     componentDidMount(){
-        Axios.get('http://localhost:5000/ElectronicRepair/water')
+        Axios.get(REQUEST_API_HEROKU+'ElectronicRepair/water')
             .then(res=>{
                 console.log(res.data);
                 let tempList = []
