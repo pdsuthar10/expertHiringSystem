@@ -10,6 +10,13 @@ const app = express();
 
 mongoose.Promise = global.Promise;
 
+app.use(express.static(path.join(__dirname, 'build')));
+
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 var connectionString = '';
 if(process.env.USERNAME){
   connectionString = 'mongodb://'+process.env.USERNAME +':'+process.env.PASSWORD+'ds043057.mlab.com:43057/heroku_1mj6bx35'
