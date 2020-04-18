@@ -20,7 +20,7 @@ class SofaCleaning extends Component{
     }
 
     componentDidMount(){
-        Axios.post('http://expert-hiring-system.herokuapp.com/professionals/category',
+        Axios.post('http://expert-hiring-node.herokuapp.com/professionals/category',
         {
             category: "Sofa Cleaning",
             city: this.props.mainPageState.city
