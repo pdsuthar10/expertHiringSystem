@@ -48,7 +48,7 @@ import SalonAtHomeWomen  from './components/Services/Salon/SalonAtHome/SalonAtHo
 import SalonAtHomeWomenCart from './components/Services/Salon/SalonAtHome/SalonAtHomeWomenCart';
 import Haircut from './components/Services/Salon/Hair/Haircut';
 import HaircutCart from './components/Services/Salon/Hair/HaircutCart';
-import CartModal from './CartModal';
+import CartModal from './components/Services/Cleaning/SofaCleaning/CartModal';
 
 import BodyMassage from './components/Services/Massage/BodyMassage/BodyMassage';
 import BodyMassageCart from './components/Services/Massage/BodyMassage/BodyMassageCart';
