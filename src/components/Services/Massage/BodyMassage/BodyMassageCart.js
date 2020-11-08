@@ -11,6 +11,7 @@ import Axios from 'axios';
 import ProductCard from './ProductCard';
 import LoadingCard from './LoadingCard';
 import { Link } from "react-router-dom";
+import { REQUEST_API_HEROKU } from '../../../../api';
 
 
 
@@ -26,7 +27,7 @@ class BodyMassageCart extends Component {
     }
 
     componentDidMount() {
-        Axios.get('http://localhost:5000/Massage/bodyMassage/')
+        Axios.get(REQUEST_API_HEROKU+'Massage/bodyMassage/')
             .then(res => {
                 console.log(res.data);
                 let tempList = [];

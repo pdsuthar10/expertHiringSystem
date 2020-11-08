@@ -9,6 +9,7 @@ import Axios from 'axios'
 import { connect } from 'react-redux';
 import { setSearch } from '../../../../actions/setSearch';
 import { Button } from 'react-bootstrap';
+import { REQUEST_API_HEROKU } from '../../../../api';
 
 
 class Electrician extends Component{
@@ -21,7 +22,7 @@ class Electrician extends Component{
     }
 
     componentDidMount(){
-        Axios.post('http://localhost:5000/professionals/category',
+        Axios.post(REQUEST_API_HEROKU+'professionals/category',
         {
             category: "Electrician",
             city: this.props.mainPageState.city

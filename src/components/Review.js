@@ -16,6 +16,7 @@ import {
 import Ratings from 'react-ratings-declarative';
 import {connect} from 'react-redux'
 import { Redirect } from 'react-router-dom'; 
+import { REQUEST_API_HEROKU } from '../api';
 
 
 class Review extends Component {
@@ -35,7 +36,7 @@ class Review extends Component {
     }
 
     componentDidMount(){
-        Axios.get('http://localhost:5000/professionals/')
+        Axios.get(REQUEST_API_HEROKU+'professionals/')
             .then(res=>{
                 if(Object.keys(res.data).length === 0){
                     console.log("Couldnt fetch data!");
@@ -77,7 +78,7 @@ class Review extends Component {
         // })
         var cityFromDropdown = e.target.innerHTML;
         
-        Axios.post('http://localhost:5000/professionals/city',
+        Axios.post(REQUEST_API_HEROKU+'professionals/city',
         {
             city: cityFromDropdown
         },{
@@ -107,7 +108,7 @@ class Review extends Component {
     handleCategorySelect = (e) =>{
         var categoryFromDropdown = e.target.innerHTML;
         
-        Axios.post('http://localhost:5000/professionals/category',
+        Axios.post(REQUEST_API_HEROKU+'professionals/category',
         {
             category: categoryFromDropdown,
             city: this.state.citySelect
@@ -136,7 +137,7 @@ class Review extends Component {
         
         console.log(professionalID);
         
-        Axios.post('http://localhost:5000/professionals/review/'+professionalID,
+        Axios.post(REQUEST_API_HEROKU+'professionals/review/'+professionalID,
         {
             name: this.props.userState.user.name,
             starsGiven: this.state.rating,

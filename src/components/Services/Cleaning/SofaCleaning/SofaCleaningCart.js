@@ -11,6 +11,7 @@ import Axios from 'axios';
 import ProductCard from './ProductCard';
 import LoadingCard from './LoadingCard';
 import { Link } from "react-router-dom";
+import { REQUEST_API_HEROKU } from '../../../../api';
 
 
   
@@ -26,7 +27,7 @@ class SofaCleaningCart extends Component {
     }
 
     componentDidMount(){
-        Axios.get('http://localhost:5000/cleaning/sofaCleaning/')
+        Axios.get(REQUEST_API_HEROKU+'cleaning/sofaCleaning/')
             .then(res=>{
                 console.log(res.data);
                 let tempList = [];

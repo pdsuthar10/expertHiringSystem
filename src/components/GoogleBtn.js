@@ -4,6 +4,7 @@ import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import axios from 'axios';
 import { setUser } from '../actions/setUser';
 import { connect } from 'react-redux';
+import {REQUEST_API_HEROKU} from '../api'
 
 const CLIENT_ID = '340522959852-litv8sc1lq7ndp670pkbmhshg47n522c.apps.googleusercontent.com';
 
@@ -26,10 +27,10 @@ class GoogleBtn extends Component {
   login (response) {
     console.log(response)
     if(response.tokenObj.access_token){
-      axios.get('http://localhost:5000/users/findByEmail/'+response.profileObj.email)
+      axios.get(REQUEST_API_HEROKU+'users/findByEmail/'+response.profileObj.email)
         .then(res=>{
           if(Object.keys(res.data).length === 0){
-            axios.post('http://localhost:5000/users/add',
+            axios.post(REQUEST_API_HEROKU+'users/add',
             {
               name: response.profileObj.name,
               username: response.profileObj.email,

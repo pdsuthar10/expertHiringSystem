@@ -9,6 +9,7 @@ import Axios from 'axios'
 import { connect } from 'react-redux'
 import { setSearch } from '../../../../actions/setSearch';
 import { Button } from 'react-bootstrap';
+import { REQUEST_API_HEROKU } from '../../../../api.js'
 
 class SofaCleaning extends Component{
 
@@ -19,27 +20,27 @@ class SofaCleaning extends Component{
         seeMoreReviews: false
     }
 
-    async componentDidMount(){
+    async componentDidMount() {
         try {
-            const result =  await Axios.post('http://localhost:5000/professionals/categor',
+            const result = await Axios.post('http://localhost:5000/professionals/categor',
                 {
                     category: "Sofa Cleaning",
                     city: this.props.mainPageState.city
-                },{
+                }, {
                     "headers": {
                         'Content-Type': 'application/json',
                     }
                 })
 
-            if(!result) console.log("Not found")
+            if (!result) console.log("Not found")
 
             const reviews = []
-            result.data.map(professional=>professional.reviews.map(review=>reviews.push(review)));
+            result.data.map(professional => professional.reviews.map(review => reviews.push(review)));
             this.setState({
                 professionals: result.data,
                 userReviews: reviews
             })
-        }catch (err){
+        } catch (err) {
             console.log("Site not found")
         }
     }

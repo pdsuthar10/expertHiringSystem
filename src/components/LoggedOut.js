@@ -18,6 +18,7 @@ import {
 } from "reactstrap";
 import axios from 'axios';
 import GoogleBtn from './GoogleBtn';
+import {REQUEST_API_HEROKU} from '../api'
 
 class LoggedOut extends Component {
 
@@ -195,7 +196,7 @@ class LoggedOut extends Component {
 
    
 
-      axios.get('http://localhost:5000/users/findByEmail/'+newState.username)
+      axios.get(REQUEST_API_HEROKU+'users/findByEmail/'+newState.username)
         .then(res=>{
           if(Object.keys(res.data).length === 0){
 
@@ -214,7 +215,7 @@ class LoggedOut extends Component {
               password: this.state.password
             };
       
-            axios.post('http://localhost:5000/users/login',
+            axios.post(REQUEST_API_HEROKU+'users/login',
             {
               username: this.state.username,
               password: this.state.password
@@ -310,7 +311,7 @@ class LoggedOut extends Component {
       return;
 
 
-      axios.get('http://localhost:5000/users/findByEmail/'+this.state.username)
+      axios.get(REQUEST_API_HEROKU+'users/findByEmail/'+this.state.username)
         .then(res=>{
           if(Object.keys(res.data).length !== 0){
 
@@ -333,7 +334,7 @@ class LoggedOut extends Component {
               password: this.state.password
             };
           
-            axios.post('http://localhost:5000/users/add',
+            axios.post(REQUEST_API_HEROKU+'users/add',
             {
               name: this.state.name,
               username: this.state.username,
