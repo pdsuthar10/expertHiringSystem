@@ -2,52 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a349c8a-abe7-46c2-9a1a-30ffd96fe3a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Careers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Careers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoogleBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoogleBtn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoggedOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoggedOut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PayPalCheckoutButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PayPalCheckoutButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PaymentHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PaymentHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/acRepair/ACRepair.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/acRepair/ACRepair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/acRepair/ACRepairCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/acRepair/ACRepairCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/fridgeRepair/FridgeRepair.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/fridgeRepair/FridgeRepair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/fridgeRepair/FridgeRepairCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/fridgeRepair/FridgeRepairCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/washingMachineRepair/WashingMachineRepair.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/washingMachineRepair/WashingMachineRepair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/washingMachineRepair/WashingMachineRepairCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ApplianceRepair/washingMachineRepair/WashingMachineRepairCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/BathroomCleaning/BathroomCleaning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/BathroomCleaning/BathroomCleaning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/BathroomCleaning/BathroomCleaningCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/BathroomCleaning/BathroomCleaningCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/KitchenCleaning/KitchenCleaning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/KitchenCleaning/KitchenCleaning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/KitchenCleaning/KitchenCleaningCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/KitchenCleaning/KitchenCleaningCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/SofaCleaning/SofaCleaning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/SofaCleaning/SofaCleaning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/sofaCleaning/CartModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/SofaCleaning/CartModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/sofaCleaning/LoadingCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/SofaCleaning/LoadingCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/sofaCleaning/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/SofaCleaning/ProductCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/sofaCleaning/SofaCleaning.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/sofaCleaning/SofaCleaningCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/SofaCleaning/SofaCleaningCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Cleaning/sofaCleaning/cleaning.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Cleaning/SofaCleaning/cleaning.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/microwaveRepair/MicrowaveRepair.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/microwaveRepair/MicrowaveRepair.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/microwaveRepair/MicrowaveRepairCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/microwaveRepair/MicrowaveRepairCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/tvRepair/TVRepair.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/tvRepair/TVRepair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/tvRepair/TVRepairCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/tvRepair/TVRepairCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/waterRepair/WaterRepair.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/waterRepair/WaterRepair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/waterRepair/WaterRepairCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/waterRepair/WaterRepairCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Home Service/Carpenter/Carpenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Home Service/Carpenter/Carpenter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Home Service/Carpenter/CarpenterCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Home Service/Carpenter/CarpenterCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Home Service/Electrician/Electrician.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Home Service/Electrician/Electrician.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Home Service/Electrician/ElectricianCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Home Service/Electrician/ElectricianCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Home Service/Plumber/Plumber.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Home Service/Plumber/Plumber.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Home Service/Plumber/PlumberCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Home Service/Plumber/PlumberCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Massage/BodyMassage/BodyMassage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Massage/BodyMassage/BodyMassage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Massage/BodyMassage/BodyMassageCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Massage/BodyMassage/BodyMassageCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Salon/Hair/Haircut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Salon/Hair/Haircut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Salon/Hair/HaircutCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Salon/Hair/HaircutCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Salon/SalonAtHome/SalonAtHomeWomen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Salon/SalonAtHome/SalonAtHomeWomen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Salon/SalonAtHome/SalonAtHomeWomenCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Salon/SalonAtHome/SalonAtHomeWomenCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Salon/makeUp/MakeUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Salon/makeUp/MakeUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Salon/makeUp/MakeUpCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Salon/makeUp/MakeUpCart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +49,7 @@
       <workItem from="1603421834379" duration="360000" />
       <workItem from="1604647132489" duration="2036000" />
       <workItem from="1604832127479" duration="1171000" />
-      <workItem from="1604872742043" duration="2425000" />
+      <workItem from="1604872742043" duration="2725000" />
     </task>
     <servers />
   </component>
