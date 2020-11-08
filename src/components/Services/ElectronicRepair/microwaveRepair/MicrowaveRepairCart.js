@@ -27,11 +27,7 @@ class MicrowaveRepairCart extends Component {
     }
 
     componentDidMount(){
-<<<<<<< HEAD
-        Axios.get('http://localhost:5000/ElectronicRepair/microwave')
-=======
         Axios.get(REQUEST_API_HEROKU+'MicrowaveRepair/microwave')
->>>>>>> fd9032ead460f15da43fbbd9cb14edf354a89b00
             .then(res=>{
                 console.log(res.data);
                 let tempList = []
