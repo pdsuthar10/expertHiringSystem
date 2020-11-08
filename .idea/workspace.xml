@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a349c8a-abe7-46c2-9a1a-30ffd96fe3a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/microwaveRepair/MicrowaveRepairCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ElectronicRepair/microwaveRepair/MicrowaveRepairCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
       <workItem from="1603421834379" duration="360000" />
       <workItem from="1604647132489" duration="2036000" />
       <workItem from="1604832127479" duration="1171000" />
-      <workItem from="1604872742043" duration="2725000" />
+      <workItem from="1604872742043" duration="2921000" />
     </task>
     <servers />
   </component>
