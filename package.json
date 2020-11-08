@@ -14,6 +14,7 @@
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "emailjs": "^2.2.0",
     "emailjs-com": "^2.4.1",
@@ -43,11 +44,13 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
-    "thunk": "0.0.1"
+    "thunk": "0.0.1",
+    "yarn": "^1.22.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "client": "npm run start --prefix",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon ./backend/server.js",
     "ganesh": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",

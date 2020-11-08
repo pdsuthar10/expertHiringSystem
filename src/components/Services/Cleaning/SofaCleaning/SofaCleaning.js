@@ -20,29 +20,29 @@ class SofaCleaning extends Component{
         seeMoreReviews: false
     }
 
+    async componentDidMount() {
+        try {
+            const result = await Axios.post('http://localhost:5000/professionals/categor',
+                {
+                    category: "Sofa Cleaning",
+                    city: this.props.mainPageState.city
+                }, {
+                    "headers": {
+                        'Content-Type': 'application/json',
+                    }
+                })
 
+            if (!result) console.log("Not found")
 
-    componentDidMount(){
-        Axios.post(REQUEST_API_HEROKU+'professionals/category',
-        {
-            category: "Sofa Cleaning",
-            city: this.props.mainPageState.city
-        },{
-            "headers": {
-              'Content-Type': 'application/json',
-            }
-          })
-          .then(res=>{
-              const reviews = [];
-              res.data.map(professional=>professional.reviews.map(review=>reviews.push(review)));
-              this.setState({
-                  professionals: res.data,
-                  userReviews: reviews
-              })
-          })
-          .catch(err=>{
-              console.log(err)
-          })
+            const reviews = []
+            result.data.map(professional => professional.reviews.map(review => reviews.push(review)));
+            this.setState({
+                professionals: result.data,
+                userReviews: reviews
+            })
+        } catch (err) {
+            console.log("Site not found")
+        }
     }
 
     averageUserRatings = () =>{
@@ -61,19 +61,19 @@ class SofaCleaning extends Component{
 
     getElements = (array) => array.slice(-2);
 
-    seeMoreOnClick = (e) => {
+    seeMoreOnClick = () => {
         this.setState({
             seeMore: true
         })
     }
 
-    seeMoreReviews = (e) =>{
+    seeMoreReviews = () =>{
         this.setState({
             seeMoreReviews: true
         })
     }
 
-    seeLessOnClick = (e) =>{
+    seeLessOnClick = () =>{
         this.setState({
             seeMore: false
         })
