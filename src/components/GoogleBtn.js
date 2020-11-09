@@ -25,7 +25,6 @@ class GoogleBtn extends Component {
   }
 
   login (response) {
-    console.log(response)
     if(response.tokenObj.access_token){
       axios.get(REQUEST_API_HEROKU+'users/findByEmail/'+response.profileObj.email)
         .then(res=>{
@@ -68,7 +67,6 @@ class GoogleBtn extends Component {
   }
 
   logout (response) {
-    console.log(response)
     this.setState(state => ({
       isLogined: false,
       accessToken: ''
@@ -87,6 +85,7 @@ class GoogleBtn extends Component {
 
 
   render() {
+    console.log(process.env)
     return (
     <div>
       { this.state.isLogined ?
