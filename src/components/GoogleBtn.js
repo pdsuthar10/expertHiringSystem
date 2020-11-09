@@ -5,6 +5,7 @@ import axios from 'axios';
 import { setUser } from '../actions/setUser';
 import { connect } from 'react-redux';
 import {REQUEST_API_HEROKU} from '../api'
+require('dotenv').config()
 
 const CLIENT_ID = process.env.CLIENT_ID;
 
