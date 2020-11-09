@@ -6,7 +6,7 @@ import { setUser } from '../actions/setUser';
 import { connect } from 'react-redux';
 import {REQUEST_API_HEROKU} from '../api'
 
-const CLIENT_ID = '340522959852-litv8sc1lq7ndp670pkbmhshg47n522c.apps.googleusercontent.com';
+const CLIENT_ID = process.env.CLIENT_ID;
 
 
 class GoogleBtn extends Component {
